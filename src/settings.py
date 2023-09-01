@@ -13,50 +13,56 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "OpenCow2020"
+PROJECT_NAME_FULL: str = "OpenCow2020: Visual Identification of Individual Holstein Friesian Cattle via Deep Metric Learning"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.NCGL_2_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Livestock()]
+CATEGORY: Category = Category.Livestock(extra=Category.Drones())
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection(), CVTask.Identification()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2020-07-03"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://data.bris.ac.uk/data/dataset/10m32xl88x2b61zlkkgz3fml17"
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/opencows2020"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://data.bris.ac.uk/datasets/tar/10m32xl88x2b61zlkkgz3fml17.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
-PAPER: Optional[Union[str, List[str]]] = None
+PAPER: Optional[
+    Union[str, List[str]]
+] = "https://data.bris.ac.uk/datasets/tar/10m32xl88x2b61zlkkgz3fml17.zip"
 BLOGPOST: Optional[Union[str, List[str]]] = None
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+REPOSITORY: Optional[Union[str, List[str]]] = "https://github.com/CWOA/MetricLearningIdentification"
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+CITATION_URL: Optional[str] = "https://doi.org/10.5523/bris.10m32xl88x2b61zlkkgz3fml17"
+AUTHORS: Optional[List[str]] = ["William Andrew", "Tilo Burghardt", "Neill Campbell", "Jing Gao"]
+
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "University of Bristol, UK"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.bristol.ac.uk/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None

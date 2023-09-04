@@ -108,6 +108,7 @@ def get_settings():
     settings["class2color"] = CLASS2COLOR
     settings["paper"] = PAPER
     settings["blog"] = BLOGPOST
+    settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
     settings["organization_name"] = ORGANIZATION_NAME

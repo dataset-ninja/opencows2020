@@ -1,0 +1,7 @@
+**OpenCow2020: Visual Identification of Individual Holstein Friesian Cattle via Deep Metric Learning** is a dataset for object detection and identification tasks. It is used in the livestock industry. 
+
+The dataset consists of 11779 images with 13026 labeled objects belonging to 1 single class (*cow*).
+
+Images in the OpenCow2020 dataset have bounding box annotations. There are 4740 (40% of the total) unlabeled images (i.e. without annotations). There are 3 splits in the dataset: *detection_and_localisation* (7043 images), *identification-test* (496 images), and *identification-train* (4240 images)The dataset was released in 2020 by the University of Bristol, UK.
+
+<img src="https://github.com/dataset-ninja/opencows2020/raw/main/visualizations/poster.png">

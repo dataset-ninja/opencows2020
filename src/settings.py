@@ -34,7 +34,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://data.bris.ac.uk/data/dataset/10m32xl88x2b61zlkkgz3fml17"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 3167443
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/opencows2020"
@@ -52,9 +52,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
-PAPER: Optional[
-    Union[str, List[str]]
-] = "https://data.bris.ac.uk/datasets/tar/10m32xl88x2b61zlkkgz3fml17.zip"
+PAPER: Optional[Union[str, List[str]]] = "https://arxiv.org/abs/2006.09205"
 BLOGPOST: Optional[Union[str, List[str]]] = None
 REPOSITORY: Optional[Union[str, List[str]]] = "https://github.com/CWOA/MetricLearningIdentification"
 

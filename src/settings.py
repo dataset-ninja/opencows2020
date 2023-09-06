@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "OpenCow2020"
 PROJECT_NAME_FULL: str = "OpenCow2020: Visual Identification of Individual Holstein Friesian Cattle via Deep Metric Learning"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##

@@ -1,6 +1,6 @@
 Dataset **OpenCow2020** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/y/T/6f/X7Ila2UHvsVGfuUYaCrElDD4DNdfvFtUcN7x9xPa3ITRfvOAw6h8Ep0joS5kQgMZKHY1xj3hK2m9wtNSmzlB3Ggg6Rk4rGE07XN9mZTkAc7efwgKCd9iUBTTlqXm.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash

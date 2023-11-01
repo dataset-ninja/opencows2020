@@ -52,12 +52,13 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
-PAPER: Optional[Union[str, List[str]]] = "https://arxiv.org/abs/2006.09205"
+PAPER: Optional[Union[str, List[str]]] = "https://research-information.bris.ac.uk/en/publications/visual-identification-of-individual-holstein-friesian-cattle-via-"
 BLOGPOST: Optional[Union[str, List[str]]] = None
-REPOSITORY: Optional[Union[str, List[str]]] = "https://github.com/CWOA/MetricLearningIdentification"
+REPOSITORY: Optional[Union[str, List[str]]] = {"GitHub":"https://github.com/CWOA/MetricLearningIdentification"}
 
 CITATION_URL: Optional[str] = "https://doi.org/10.5523/bris.10m32xl88x2b61zlkkgz3fml17"
 AUTHORS: Optional[List[str]] = ["William Andrew", "Tilo Burghardt", "Neill Campbell", "Jing Gao"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["tb2935@bristol.ac.uk", "andrew.dowsey@bristol.ac.uk"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "University of Bristol, UK"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.bristol.ac.uk/"
@@ -114,6 +115,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT

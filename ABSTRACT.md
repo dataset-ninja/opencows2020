@@ -12,6 +12,8 @@ The study delineated two scenarios: `<i>`closed-set identification`</i>`, where 
 
 The OpenCows2020 dataset includes indoor and outdoor top-down imagery for cattle detection, localization, and open-set identification. The dataset comprised a total of 3,707 ***non-synthetic*** and 3336 augmented ***synthetic*** images. For open-set identification, they included 46 individuals with an average of 103 instances per class and 4,736 regions overall. The dataset was carefully split into training, validation, and testing sets to support 10-fold 8:1:1 cross-validation. Download [original dataset](https://data.bris.ac.uk/data/dataset/10m32xl88x2b61zlkkgz3fml17) to get detailed info about cross-validation.
 
-<img src="https://github.com/supervisely/supervisely/assets/78355358/33f1a827-36cf-4fa2-8434-a482399647cd" alt="image" width="800">
+<img src="https://github.com/supervisely/supervisely/assets/78355358/f130d4bd-1088-4180-b61b-8c7ef3f8337c" alt="image" width="800">
+
+<span style="font-size: smaller; font-style: italic;">Identification Instance Distribution. The distribution of instances per class for the identification component of the OpenCows2020 dataset. Instances were then randomly split to have exactly 10 testing instances per class whilst those remaining were split into training and validation in a ratio of 9 : 1, respectively. Also labelled is the source of each group of categories. ( a ), ( b ) and ( c )</span>
 
 Their work aimed to advance non-intrusive monitoring of cattle, applicable to precision farming, automated productivity assessment, health and welfare monitoring, and veterinary research, including behavioral analysis and disease outbreak tracing.
